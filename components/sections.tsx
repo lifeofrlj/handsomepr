@@ -153,27 +153,30 @@ export function Testimonials() {
     <section className="hp-section" id="testimonials">
       <div className="hp-wrap">
         <h2 className="hp-h2">Real clients, real testimonials.</h2>
-        {videoTestimonials.length > 0 ? (
-          <div className="hp-videos">
-            {videoTestimonials.map((v) => (
-              <figure key={v.id}>
-                <div className="hp-video">
-                  <iframe
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    loading="lazy"
-                    src={`https://www.youtube-nocookie.com/embed/${v.id}?rel=0&modestbranding=1`}
-                    title={`${v.name} testimonial`}
-                  />
-                </div>
-                <figcaption>
-                  <b>{v.name}</b>
-                  <span>{v.description}</span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        ) : null}
+        <div className="hp-videos">
+          {videoTestimonials.map((v) => (
+            <figure key={v.id}>
+              <div className="hp-video hp-video--short">
+                <iframe
+                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  loading="lazy"
+                  src={`https://www.youtube-nocookie.com/embed/${v.id}?rel=0&modestbranding=1`}
+                  title={`${v.name} testimonial`}
+                />
+              </div>
+              <figcaption>
+                <b>{v.name}</b>
+                <span>{v.description}</span>
+                <ul>
+                  {v.bullets.map((line) => (
+                    <li key={line}>{line}</li>
+                  ))}
+                </ul>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
         <ul className="hp-quotes">
           {testimonials.map((t) => (
             <li key={t.name}>

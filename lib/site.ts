@@ -34,8 +34,51 @@ export const results = [
   { src: "/assets/results/stage.webp", name: "Stage day", note: "Medal on stage" },
 ];
 
-/** Video testimonials (YouTube IDs). Add a description for each. */
-export const videoTestimonials: { id: string; name: string; description: string }[] = [];
+/** Video testimonials (YouTube Shorts IDs). */
+export const videoTestimonials = [
+  {
+    id: "7HzdL88zkM0",
+    name: "Justin",
+    description:
+      "Consistent for years but woke up in an average looking physique. In 6 months he got in the best shape of his life and stepped on stage for the first time.",
+    bullets: [
+      "Learned a next level of discipline",
+      "Cut out the bad habits holding him back",
+      "Stepped outside his comfort zone for the first time in a long time",
+    ],
+  },
+  {
+    id: "w9uHWPlU_Yo",
+    name: "Justin Halstead",
+    description:
+      "Overweight for 27 years and going down a bad path. Within 6 months we dropped all the bad habits and lost 50 lbs. A year later he was down 90+ lbs and stepped on stage in the transformation division.",
+    bullets: [
+      "Went from the bottom of the sales reps to the top at work",
+      "Reached 900 ng/dL testosterone naturally",
+      "Gave himself a new life",
+    ],
+  },
+  {
+    id: "O1jMYcKpK3k",
+    name: "Tony",
+    description: "Gained 25 lbs in 6 months after plateauing for years.",
+    bullets: [
+      "Learned how to run his first cycle",
+      "Got his lifestyle together after a rough period, with the support of the coaching and community",
+      "Stepped outside his comfort zone and started his own business",
+    ],
+  },
+  {
+    id: "04y2YJq5MME",
+    name: "Justin Loi",
+    description: "Fat and unhealthy to shredded and optimized. Also stepped on stage for his first time.",
+    bullets: [
+      "Needed structure for a full transformation",
+      "Guided in training, nutrition, mindset and habits",
+      "Achieved a complete physical and mental transformation",
+    ],
+  },
+];
 
 export const testimonials = [
   { name: "Nicolas", headline: "A big brother who's been there", quote: "You feel like a big brother who's actually been where I am. That's exactly what I needed." },
