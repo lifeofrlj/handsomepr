@@ -165,38 +165,23 @@ body {
 /* Hero */
 .hp-hero {
   position: relative;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 100dvh;
-  padding: 6.5rem var(--hp-gutter) 4rem;
+  padding: 6.5rem var(--hp-gutter) 0;
   overflow: hidden;
   text-align: center;
   isolation: isolate;
-}
-
-.hp-hero__bg,
-.hp-hero__bg img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: -2;
-}
-
-.hp-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: -1;
   background:
-    linear-gradient(to bottom, rgba(11, 13, 18, 0.55), rgba(11, 13, 18, 0.35) 45%, var(--hp-bg) 100%),
-    radial-gradient(60rem 30rem at 50% 50%, rgba(11, 13, 18, 0.45), transparent 70%);
+    radial-gradient(60rem 36rem at 50% 70%, rgba(58, 99, 232, 0.45), transparent 65%),
+    var(--hp-bg);
 }
 
 .hp-hero__inner {
   width: min(100%, 50rem);
+  position: relative;
+  z-index: 2;
 }
 
 .hp-hero__eyebrow {
@@ -210,7 +195,7 @@ body {
 
 .hp-hero h1 {
   margin: 0 auto;
-  font-size: clamp(2.4rem, 7vw, 5.5rem);
+  font-size: clamp(2.4rem, 6.5vw, 5.25rem);
   font-weight: 800;
   line-height: 0.96;
   letter-spacing: -0.04em;
@@ -224,6 +209,50 @@ body {
   color: #c9cfdb;
   font-size: clamp(1rem, 1.4vw, 1.2rem);
   line-height: 1.6;
+}
+
+.hp-hero__photo {
+  display: block;
+  flex: 1 1 auto;
+  width: 100%;
+  margin-top: 1rem;
+  min-height: 22rem;
+  position: relative;
+}
+
+.hp-hero__photo img {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-height: min(60dvh, 44rem);
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.6));
+}
+
+.hp-hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 10rem;
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent, var(--hp-bg));
+  pointer-events: none;
+}
+
+@media (max-width: 760px) {
+  .hp-hero {
+    padding-top: 5.5rem;
+  }
+  .hp-hero__photo {
+    min-height: 20rem;
+  }
+  .hp-hero__photo img {
+    max-height: 48dvh;
+  }
 }
 
 /* CTA: apply slab */
