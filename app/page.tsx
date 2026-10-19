@@ -6,14 +6,11 @@ import {
   Closing,
   CnnFeature,
   Faq,
-  FitCheck,
   Hero,
   Method,
-  PlaybookTeaser,
+  NextLevel,
   Results,
   Testimonials,
-  WhatItLooksLike,
-  WhatWeDo,
 } from "@/components/sections";
 
 export default function Home() {
@@ -22,17 +19,14 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        <WhatWeDo />
-        <Method />
-        <WhatItLooksLike />
         <Results />
+        <NextLevel />
+        <Method />
+        <Brotherhood />
         <Testimonials />
         <CnnFeature />
-        <Brotherhood />
         <About />
-        <FitCheck />
         <Faq />
-        <PlaybookTeaser />
         <Closing />
       </main>
       <Footer />

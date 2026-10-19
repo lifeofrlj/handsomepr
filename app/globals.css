@@ -745,6 +745,134 @@ body {
   }
 }
 
+/* Kicker, prose, 2 wide grid, perks, video grid */
+.hp-kicker {
+  margin: 0 0 0.75rem;
+  color: var(--hp-accent);
+  font-family: var(--hp-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hp-prose {
+  max-width: 58ch;
+  margin: 1.5rem auto 0;
+  color: var(--hp-muted);
+  font-size: 1.1rem;
+  line-height: 1.65;
+}
+
+.hp-prose p {
+  margin: 0 0 1rem;
+}
+
+.hp-prose b {
+  color: var(--hp-ink);
+}
+
+.hp-prose a {
+  color: var(--hp-ink);
+  text-decoration: underline;
+  text-decoration-color: var(--hp-accent);
+  text-underline-offset: 3px;
+}
+
+.hp-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  width: min(100%, 52rem);
+  margin: 2rem auto 0;
+  text-align: left;
+}
+
+.hp-grid2 figure {
+  margin: 0;
+}
+
+.hp-grid2 figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0.15rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.hp-grid2 figcaption span {
+  color: var(--hp-muted);
+  font-family: var(--hp-mono);
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+
+.hp-perks {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  width: min(100%, 44rem);
+  margin: 2rem auto 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.hp-perks li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--hp-line);
+  border-radius: var(--hp-radius);
+  background: var(--hp-bg);
+  font-weight: 600;
+}
+
+.hp-perks svg {
+  flex: none;
+  color: var(--hp-accent);
+}
+
+.hp-videos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+  text-align: left;
+}
+
+.hp-videos figure {
+  margin: 0;
+}
+
+.hp-videos figcaption {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.9rem 0.15rem 0;
+  color: var(--hp-muted);
+  line-height: 1.5;
+}
+
+.hp-videos figcaption b {
+  color: var(--hp-ink);
+}
+
+@media (max-width: 760px) {
+  .hp-perks,
+  .hp-videos {
+    grid-template-columns: 1fr;
+  }
+  .hp-grid2 {
+    gap: 0.6rem;
+  }
+  .hp-grid2 figcaption {
+    flex-direction: column;
+    gap: 0.1rem;
+    font-size: 0.85rem;
+  }
+}
+
 /* Results rail */
 .hp-rail {
   display: grid;
@@ -1142,6 +1270,10 @@ body {
 .hp-closing .hp-h2 {
   max-width: 14ch;
   font-size: clamp(2.5rem, 7vw, 5.5rem);
+}
+
+.hp-closing .hp-embed {
+  margin-top: 2.5rem;
 }
 
 /* Footer */

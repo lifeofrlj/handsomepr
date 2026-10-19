@@ -18,6 +18,18 @@ export const site = {
   transformationsFolder: "https://drive.google.com/drive/folders/1GVSqcVd__bbJD0xiR5nXC4IKdrZX2rtY?usp=drive_link",
 } as const;
 
+/** Client result photos, shown 2 wide. Add more entries as photos come in. */
+export const results = [
+  { src: "/assets/results/justin.webp", name: "Justin", note: "Natural, OCB medalist" },
+  { src: "/assets/results/merritt.webp", name: "Merritt", note: "Full rebuild" },
+  { src: "/assets/results/alex.webp", name: "Alex", note: "Soft to stage ready" },
+  { src: "/assets/results/tyler.webp", name: "Tyler", note: "Fat loss, recomp" },
+  { src: "/assets/results/stage.webp", name: "Stage day", note: "Medal on stage" },
+];
+
+/** Video testimonials (YouTube IDs). Add a description for each. */
+export const videoTestimonials: { id: string; name: string; description: string }[] = [];
+
 export const testimonials = [
   { name: "Nicolas", headline: "A big brother who's been there", quote: "You feel like a big brother who's actually been where I am. That's exactly what I needed." },
   { name: "Carson", headline: "The truth, not what I want to hear", quote: "You don't mess around. You get it done and tell me the truth, not just what I want to hear." },
