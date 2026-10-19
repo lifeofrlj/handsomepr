@@ -24,6 +24,13 @@ export const results = [
   { src: "/assets/results/merritt.webp", name: "Merritt", note: "Full rebuild" },
   { src: "/assets/results/alex.webp", name: "Alex", note: "Soft to stage ready" },
   { src: "/assets/results/tyler.webp", name: "Tyler", note: "Fat loss, recomp" },
+  { src: "/assets/results/npc.webp", name: "Client", note: "First NPC show" },
+  { src: "/assets/results/bruce.webp", name: "Client", note: "40+ transformation" },
+  { src: "/assets/results/back.webp", name: "Client", note: "Fat loss, back rebuilt" },
+  { src: "/assets/results/flex.webp", name: "Client", note: "Lean and conditioned" },
+  { src: "/assets/results/young1.webp", name: "Client", note: "Lean muscle gain" },
+  { src: "/assets/results/young2.webp", name: "Client", note: "Fat loss, recomp" },
+  { src: "/assets/results/tony.webp", name: "Tony", note: "Almost there, Coach" },
   { src: "/assets/results/stage.webp", name: "Stage day", note: "Medal on stage" },
 ];
 
