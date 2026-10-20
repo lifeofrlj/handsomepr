@@ -12,6 +12,7 @@ export const site = {
   /** Playbook opt in (Typeform). Replace with the playbook form link once it exists. */
   playbookHref: "https://handsomepr.typeform.com/to/ZKVN0mZe",
   playbookEmbed: "https://handsomepr.typeform.com/to/ZKVN0mZe?typeform-embed=embed-widget&typeform-medium=embed-sdk",
+  cheatSheetHref: "https://handsomepr.typeform.com/to/fvHMNZrQ",
   cnnVideoId: "fQHzYlLBPcM",
   vslVideoId: "69pV9TO9LvE",
   magnetName: "The Handsome Enhancement Playbook",
