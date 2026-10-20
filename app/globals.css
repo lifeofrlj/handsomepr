@@ -290,6 +290,54 @@ body {
 }
 
 /* Playbook page */
+.hp-pagehero--photo {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.hp-pagehero__bg {
+  position: absolute;
+  z-index: -1;
+  right: -6%;
+  bottom: -8%;
+  height: 115%;
+  width: auto;
+  max-width: none;
+  opacity: 0.32;
+  filter: saturate(0.6);
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 85%);
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 0) 85%);
+}
+
+.hp-pagehero--photo::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 40%;
+  z-index: -1;
+  background: linear-gradient(to bottom, transparent, var(--hp-bg));
+}
+
+.hp-pagehero--photo h1 {
+  font-size: clamp(2.8rem, 7.5vw, 6rem);
+}
+
+.hp-pagehero--photo .hp-banner {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .hp-pagehero__bg {
+    right: -30%;
+    height: 100%;
+    opacity: 0.22;
+  }
+}
+
 .hp-accent {
   color: var(--hp-accent);
   font-style: normal;
@@ -305,6 +353,8 @@ body {
 }
 
 .hp-banner {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 1px solid var(--hp-accent);

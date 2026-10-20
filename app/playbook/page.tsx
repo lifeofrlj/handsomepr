@@ -31,7 +31,8 @@ export default function PlaybookPage() {
     <>
       <Nav />
       <main>
-        <section className="hp-pagehero">
+        <section className="hp-pagehero hp-pagehero--photo">
+          <img alt="" className="hp-pagehero__bg" src="/assets/ryan-hero.png" />
           <h1>
             Learn how to run your <em className="hp-accent">cycle</em> safely.
           </h1>
@@ -39,9 +40,6 @@ export default function PlaybookPage() {
             {site.magnetName} is free. Bloodwork, cycle planning, side effect prevention, nutrition and training, in
             one guide from a coach who has done it with 200+ men.
           </p>
-        </section>
-
-        <section className="hp-section hp-section--tight">
           <div className="hp-wrap hp-banner">
             <div className="hp-banner__cell">
               <h2 className="hp-h2 hp-h2--sm">Get the playbook</h2>
