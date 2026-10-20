@@ -86,6 +86,14 @@ export default function PlaybookPage() {
                 inbox in seconds.
               </p>
               <PlaybookCardCta />
+              <img
+                alt="The Handsome Enhancement Playbook ebook"
+                className="hp-card__mock"
+                height={883}
+                loading="lazy"
+                src="/assets/playbook-mockup.webp"
+                width={1400}
+              />
               <ul className="hp-checks">
                 {playbookInside.map((line) => (
                   <li key={line}>
@@ -104,6 +112,14 @@ export default function PlaybookPage() {
                 pages.
               </p>
               <CheatSheetCta />
+              <img
+                alt="The Enhancement Cheat Sheet ebook"
+                className="hp-card__mock"
+                height={883}
+                loading="lazy"
+                src="/assets/cheat-sheet-mockup.webp"
+                width={1400}
+              />
               <ul className="hp-checks">
                 {cheatInside.map((line) => (
                   <li key={line}>
