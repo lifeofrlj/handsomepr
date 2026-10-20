@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { ArrowRight, ChatCircleText, CheckCircle } from "@phosphor-icons/react/dist/ssr";
+import { ChatCircleText, CheckCircle } from "@phosphor-icons/react/dist/ssr";
 
-import { ApplyCta } from "@/components/ctas";
+import { ApplyCta, CheatSheetCta, PlaybookCardCta, PlaybookFormCta } from "@/components/ctas";
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
 import { site } from "@/lib/site";
@@ -43,10 +43,7 @@ export default function PlaybookPage() {
           <div className="hp-wrap hp-banner">
             <div className="hp-banner__cell">
               <h2 className="hp-h2 hp-h2--sm">Get the playbook</h2>
-              <a className="hp-cta-apply" href={site.playbookHref} rel="noopener" target="_blank">
-                Send me the playbook
-                <ArrowRight aria-hidden size={18} weight="bold" />
-              </a>
+              <PlaybookFormCta />
             </div>
             <div className="hp-banner__cell">
               <a className="hp-banner__phone" href={site.smsHref}>
@@ -88,10 +85,7 @@ export default function PlaybookPage() {
                 Bloodwork, cycle structure, side effect prevention, nutrition, training and long term health. In your
                 inbox in seconds.
               </p>
-              <a className="hp-cta-apply" href={site.playbookHref} rel="noopener" target="_blank">
-                Click here
-                <ArrowRight aria-hidden size={18} weight="bold" />
-              </a>
+              <PlaybookCardCta />
               <ul className="hp-checks">
                 {playbookInside.map((line) => (
                   <li key={line}>
@@ -109,10 +103,7 @@ export default function PlaybookPage() {
                 The quick reference to peptides, testosterone and the compounds used in bodybuilding, all on a few
                 pages.
               </p>
-              <a className="hp-cta-apply" href={site.cheatSheetHref} rel="noopener" target="_blank">
-                Click here
-                <ArrowRight aria-hidden size={18} weight="bold" />
-              </a>
+              <CheatSheetCta />
               <ul className="hp-checks">
                 {cheatInside.map((line) => (
                   <li key={line}>

@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 
 import { site } from "@/lib/site";
 
+import "@typeform/embed/build/css/popup.css";
 import "./globals.css";
 
 export const metadata: Metadata = {

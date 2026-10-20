@@ -1,6 +1,7 @@
 import { site } from "@/lib/site";
 
 import { Wordmark } from "./nav";
+import { TypeformButton } from "./typeform-button";
 
 export function Footer() {
   return (
@@ -9,9 +10,9 @@ export function Footer() {
         <Wordmark />
         <div className="hp-footer__links">
           <a href="/playbook">Playbook</a>
-          <a href={site.applyHref} rel="noopener" target="_blank">
+          <TypeformButton formId={site.applyFormId} href={site.applyHref}>
             Apply
-          </a>
+          </TypeformButton>
           <a href={site.instagram} rel="noopener" target="_blank">
             Instagram
           </a>

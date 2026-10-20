@@ -5,6 +5,8 @@ import { List, X } from "@phosphor-icons/react";
 
 import { site } from "@/lib/site";
 
+import { TypeformButton } from "./typeform-button";
+
 const navLinks = [
   ["/#method", "Method"],
   ["/#results", "Results"],
@@ -34,9 +36,9 @@ export function Nav() {
           ))}
         </nav>
         <div className="hp-nav__right">
-          <a className="hp-nav__call" href={site.applyHref} rel="noopener" target="_blank">
+          <TypeformButton className="hp-nav__call" formId={site.applyFormId} href={site.applyHref}>
             Apply Now
-          </a>
+          </TypeformButton>
           <button
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
@@ -54,9 +56,9 @@ export function Nav() {
             {label}
           </a>
         ))}
-        <a href={site.applyHref} rel="noopener" target="_blank">
+        <TypeformButton formId={site.applyFormId} href={site.applyHref}>
           Apply Now
-        </a>
+        </TypeformButton>
       </nav>
     </header>
   );

@@ -7,11 +7,14 @@ export const site = {
   phoneDisplay: "(512) 734-8228",
   smsHref: "sms:+15127348228?body=Hey%20Ryan%2C%20I%20have%20a%20question%20about%20coaching",
   /** Coaching application (Typeform). */
+  applyFormId: "XQaM96iw",
   applyHref: "https://form.typeform.com/to/XQaM96iw",
   applyEmbed: "https://form.typeform.com/to/XQaM96iw?typeform-embed=embed-widget&typeform-medium=embed-sdk",
   /** Playbook opt in (Typeform). Replace with the playbook form link once it exists. */
+  playbookFormId: "ZKVN0mZe",
   playbookHref: "https://handsomepr.typeform.com/to/ZKVN0mZe",
   playbookEmbed: "https://handsomepr.typeform.com/to/ZKVN0mZe?typeform-embed=embed-widget&typeform-medium=embed-sdk",
+  cheatSheetFormId: "fvHMNZrQ",
   cheatSheetHref: "https://handsomepr.typeform.com/to/fvHMNZrQ",
   cnnVideoId: "fQHzYlLBPcM",
   vslVideoId: "69pV9TO9LvE",
