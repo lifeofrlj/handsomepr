@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: { default: site.brand, template: `%s | ${site.brand}` },
   description: "Health first coaching for enhanced and natural lifters who want the next level. Get the free Handsome Enhancement Playbook.",
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: "/icon.png", apple: "/apple-icon.png" },
   openGraph: {
     type: "website",
     siteName: site.brand,
