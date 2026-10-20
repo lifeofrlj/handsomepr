@@ -285,6 +285,10 @@ body {
   border: 0;
 }
 
+.hp-vsl--flush {
+  margin-top: 0;
+}
+
 .hp-hero--vsl .hp-hero__sub {
   margin-top: 1.75rem;
 }
@@ -1621,6 +1625,33 @@ body {
   }
   .hp-pagehero h1 {
     font-size: clamp(2rem, 9vw, 3rem);
+  }
+}
+
+@media (min-width: 761px) {
+  .hp-cta-apply,
+  .hp-submit {
+    padding: 1.2rem 2.2rem;
+    font-size: 1.15rem;
+    border-radius: 12px;
+  }
+  .hp-cta-apply svg {
+    width: 22px;
+    height: 22px;
+  }
+  .hp-textme {
+    padding: 1.05rem 1.6rem;
+    font-size: 1.05rem;
+  }
+  .hp-cta-playbook {
+    font-size: 1.1rem;
+  }
+  .hp-nav__call {
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+  }
+  .hp-banner__text {
+    font-size: 1.05rem;
   }
 }
 

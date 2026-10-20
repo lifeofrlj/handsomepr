@@ -63,8 +63,7 @@ export default function PlaybookPage() {
 
         <section className="hp-section" id="watch">
           <div className="hp-wrap">
-            <h2 className="hp-h2">Want me to run it with you?</h2>
-            <div className="hp-vsl">
+            <div className="hp-vsl hp-vsl--flush">
               <iframe
                 allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
