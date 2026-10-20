@@ -673,6 +673,12 @@ body {
   background: var(--hp-raised);
 }
 
+.hp-embed--form {
+  width: 100%;
+  height: 32rem;
+  margin: 0;
+}
+
 .hp-embed iframe {
   width: 100%;
   height: 100%;

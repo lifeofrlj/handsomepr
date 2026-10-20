@@ -46,11 +46,12 @@ export default function PlaybookPage() {
                 ))}
               </ul>
             </div>
-            <div className="hp-form hp-done">
-              <h3>Get it in your inbox.</h3>
-              <p>Tap the button, answer three quick questions, and the playbook is sent to you right away.</p>
-              <PlaybookFormCta />
-              <p className="hp-fine">No spam. One email with the guide, and you can unsubscribe in one click.</p>
+            <div className="hp-embed hp-embed--form">
+              <iframe
+                allow="camera; microphone; autoplay; encrypted-media"
+                src={site.playbookEmbed}
+                title="Get the Handsome Enhancement Playbook"
+              />
             </div>
           </div>
         </section>
