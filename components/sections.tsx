@@ -31,6 +31,35 @@ export function Hero() {
   );
 }
 
+export function VslHero() {
+  return (
+    <section className="hp-hero hp-hero--vsl" id="top">
+      <div className="hp-hero__inner">
+        <p className="hp-hero__eyebrow">Watch this before you apply</p>
+        <h1>We Help Men Look, Feel & Become Badass</h1>
+        <div className="hp-vsl">
+          <iframe
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            src={`https://www.youtube-nocookie.com/embed/${site.vslVideoId}?rel=0&modestbranding=1`}
+            title="Handsome PR coaching"
+          />
+        </div>
+        <p className="hp-hero__sub">
+          Online coaching & community for men who want to transform their body, mind and life through proper
+          training, nutrition, mindset, lifestyle and hormone optimization. If you're ready to Handsome PR, apply below.
+        </p>
+        <div className="hp-actions">
+          <ApplyCta />
+          <a className="hp-cta-playbook" href="#results">
+            See client results
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function Results() {
   return (
     <section className="hp-section" id="results">
