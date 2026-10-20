@@ -293,6 +293,23 @@ body {
   margin-top: 1.75rem;
 }
 
+/* Faded photo hero (home) */
+.hp-hero--faded {
+  justify-content: center;
+  min-height: min(100dvh, 56rem);
+  padding-bottom: 5rem;
+}
+
+.hp-hero--faded .hp-hero__inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 54rem);
+}
+
+.hp-hero--faded::after {
+  height: 30%;
+}
+
 /* Playbook page */
 .hp-pagehero--photo {
   position: relative;

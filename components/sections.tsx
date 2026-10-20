@@ -7,7 +7,8 @@ import { ApplyCta, TextMe } from "./ctas";
 
 export function Hero() {
   return (
-    <section className="hp-hero" id="top">
+    <section className="hp-hero hp-hero--faded" id="top">
+      <img alt="" className="hp-pagehero__bg" fetchPriority="high" src="/assets/ryan-hero.png" />
       <div className="hp-hero__inner">
         <p className="hp-hero__eyebrow">By application only. Limited spots.</p>
         <h1>We Help Men Look, Feel & Become Badass</h1>
@@ -23,10 +24,6 @@ export function Hero() {
           </a>
         </div>
       </div>
-      <picture className="hp-hero__photo">
-        <source media="(max-width: 760px)" srcSet="/assets/ryan-hero-mobile.png" />
-        <img alt="Ryan Johnson, Classic Physique athlete and coach" fetchPriority="high" src="/assets/ryan-hero.png" />
-      </picture>
     </section>
   );
 }
