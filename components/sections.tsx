@@ -169,6 +169,10 @@ export function Brotherhood() {
             </li>
           ))}
         </ul>
+        <figure className="hp-calls">
+          <img alt="Recordings of weekly Brotherhood group calls" loading="lazy" src="/assets/group-calls.webp" />
+          <figcaption>Weekly Brotherhood group calls, recorded for the community library.</figcaption>
+        </figure>
       </div>
     </section>
   );

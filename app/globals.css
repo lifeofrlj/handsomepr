@@ -931,6 +931,25 @@ body {
     var(--hp-raised);
 }
 
+/* Group calls image */
+.hp-calls {
+  width: min(100%, 60rem);
+  margin: 2.5rem auto 0;
+}
+
+.hp-calls img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--hp-line);
+  border-radius: var(--hp-radius);
+}
+
+.hp-calls figcaption {
+  margin-top: 0.75rem;
+  color: var(--hp-muted);
+  font-size: 0.9rem;
+}
+
 /* Testimonials */
 .hp-quotes {
   display: grid;
