@@ -13,9 +13,10 @@ export function Hero() {
         <p className="hp-hero__eyebrow">By application only. Limited spots.</p>
         <h1>We Help Men Look, Feel & Become Badass</h1>
         <p className="hp-hero__sub">
-          Online coaching & community for men who want to transform their body, mind and life through proper
-          training, nutrition, mindset, lifestyle and hormone optimization. We execute with a no b.s approach and take
-          our results very seriously. If you're ready to Handsome PR, click the button below.
+          Online coaching & community for men who want to <mark className="hl">transform their body, mind and life</mark> through
+          proper training, nutrition, mindset, lifestyle and hormone optimization. We execute with a{" "}
+          <mark className="hl">no b.s approach</mark> and take our results very seriously. If you're ready to Handsome PR,
+          click the button below.
         </p>
         <div className="hp-actions">
           <ApplyCta />
@@ -63,6 +64,22 @@ export function Results() {
       <div className="hp-wrap">
         <p className="hp-kicker">Proof of the promise</p>
         <h2 className="hp-h2">Client results</h2>
+        <ul className="hp-stats">
+          <li>
+            <b>250+</b>
+            <span>Athletes coached</span>
+          </li>
+          <li>
+            <b>100%</b>
+            <span>Custom programming</span>
+          </li>
+          <li>
+            <span className="hp-stats__only">Tailored enhanced protocols</span>
+          </li>
+          <li>
+            <span className="hp-stats__only">Direct no b.s communication & guidance</span>
+          </li>
+        </ul>
         <div className="hp-grid2">
           {results.map((item) => (
             <figure key={item.src}>
@@ -91,13 +108,19 @@ export function NextLevel() {
         <h2 className="hp-h2">Coaching for men who are ready for the next level.</h2>
         <div className="hp-prose">
           <p>
-            You've already been training and eating healthy for years with one goal in mind: <b>BUILD A BADASS PHYSIQUE.</b>
+            You've already been training and eating healthy for years with one goal in mind:{" "}
+            <mark className="hl">BUILD A BADASS PHYSIQUE.</mark>
           </p>
-          <p>Yet the results still fall short of what you know you're capable of.</p>
           <p>
-            This is the <b>TRAP</b> most guys get stuck in: <b>CONSISTENT</b> but <b>LACKING RESULTS.</b>
+            Yet the results still fall short of what you <mark className="hl">know you're capable of.</mark>
           </p>
-          <p>This is what we fix at Team Handsome PR.</p>
+          <p>
+            This is the <mark className="hl">TRAP</mark> most guys get stuck in: <mark className="hl">CONSISTENT</mark> but{" "}
+            <mark className="hl">LACKING RESULTS.</mark>
+          </p>
+          <p>
+            This is what we <mark className="hl">fix</mark> at Team Handsome PR.
+          </p>
           <p>
             Check out our <a href="#results">results</a> and <a href="#method">how we do it</a> to see if moving forward
             with our coaching makes sense for you.
@@ -180,9 +203,9 @@ export function Brotherhood() {
       <div className="hp-wrap">
         <h2 className="hp-h2">You don't grow alone.</h2>
         <p className="hp-lede">
-          When you join Team Handsome PR you're not just getting a coach, you're getting access to a community of like
-          minded men all on the same mission as you. Everyone inside is building, pushing, and holding each other to a
-          higher standard.
+          When you join Team Handsome PR you're not just getting a coach, you're getting access to a{" "}
+          <mark className="hl">community of like minded men</mark> all on the same mission as you. Everyone inside is
+          building, pushing, and holding each other to a <mark className="hl">higher standard.</mark>
         </p>
         <ul className="hp-perks">
           {perks.map((perk) => (
@@ -269,10 +292,10 @@ export function About() {
         <div>
           <h2 className="hp-h2">Who is Ryan Johnson?</h2>
           <p className="hp-lede">
-            I'm Ryan Johnson. Competitive Classic Physique athlete, three and a half years coaching men full time, 200+
-            clients natural and enhanced. I started coaching because I watched good men waste years on bad plans and
-            worse advice. My faith drives how I coach: honest, direct, and invested in who you become, not just how you
-            look.
+            I'm Ryan Johnson. <mark className="hl">Competitive Classic Physique athlete</mark>, three and a half years
+            coaching men full time, 250+ clients natural and enhanced. I started coaching because I watched good men
+            waste years on bad plans and worse advice. <mark className="hl">My faith drives how I coach</mark>: honest,
+            direct, and invested in who you become, not just how you look.
           </p>
           <blockquote className="hp-quote">
             “I believe God put me on earth to help men look, feel & become more bad*ss.”
@@ -326,9 +349,10 @@ export function Closing() {
       <div className="hp-wrap">
         <h2 className="hp-h2">Stop guessing with your health.</h2>
         <p className="hp-lede">
-          Spots are limited. I only work with individuals who are 100% committed, as I am, to looking, feeling and
-          becoming more bad*ss. Fill out the application below. It only takes a few minutes, and if it's a good fit
-          you'll book a call with me directly to discuss getting started.
+          <mark className="hl">Spots are limited.</mark> I only work with individuals who are{" "}
+          <mark className="hl">100% committed</mark>, as I am, to looking, feeling and becoming more bad*ss. Fill out the
+          application below. It only takes a few minutes, and if it's a good fit you'll{" "}
+          <mark className="hl">book a call with me directly</mark> to discuss getting started.
         </p>
         <div className="hp-embed">
           <iframe allow="camera; microphone; autoplay; encrypted-media" loading="lazy" src={site.applyEmbed} title="Coaching application" />

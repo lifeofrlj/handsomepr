@@ -37,8 +37,9 @@ export default function PlaybookPage() {
             Learn how to run your <em className="hp-accent">cycle</em> safely.
           </h1>
           <p className="hp-lede">
-            {site.magnetName} is free. Bloodwork, cycle planning, side effect prevention, nutrition and training, in
-            one guide from a coach who has done it with 200+ men.
+            {site.magnetName} is <mark className="hl">free</mark>. Bloodwork, cycle planning, side effect prevention,
+            nutrition and training, in one guide from a coach who has done it with{" "}
+            <mark className="hl">250+ men</mark>.
           </p>
           <div className="hp-wrap hp-banner">
             <div className="hp-banner__cell">
