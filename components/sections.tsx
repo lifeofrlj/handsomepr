@@ -136,6 +136,29 @@ export function Method() {
             </li>
           ))}
         </ol>
+        <div className="hp-classroom">
+          <div className="hp-classroom__copy">
+            <p className="hp-kicker">Inside the education platform</p>
+            <h3>12 modules. 50+ hours. Everything I know.</h3>
+            <p>
+              Training, nutrition, discipline, relationships, PEDs, peptides, bloodwork, blast and cruise versus PCT,
+              and a breakdown of my own cycles. All of it inside the Handsome PR classroom from day one.
+            </p>
+            <ul className="hp-classroom__tags">
+              {["Start Here", "Bad*ss Blueprint", "Relationships", "Nutrition", "Training", "Discipline Systems", "Everything PEDs", "Peptides", "Health", "Bloodwork", "B&C vs PCT", "My Cycles"].map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="hp-classroom__scene" aria-hidden="true">
+            <div className="hp-classroom__card">
+              <img alt="" loading="lazy" src="/assets/classroom.webp" />
+            </div>
+            <div className="hp-classroom__reflection">
+              <img alt="" loading="lazy" src="/assets/classroom.webp" />
+            </div>
+          </div>
+        </div>
         <div className="hp-actions">
           <ApplyCta />
         </div>
