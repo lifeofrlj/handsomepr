@@ -57,7 +57,7 @@ export function Nav() {
             {label}
           </a>
         ))}
-        <TypeformButton formId={site.applyFormId} href={site.applyHref}>
+        <TypeformButton className="hp-cta-apply hp-nav__sheet-apply" formId={site.applyFormId} href={site.applyHref}>
           Apply Now
         </TypeformButton>
       </nav>

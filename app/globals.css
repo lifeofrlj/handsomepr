@@ -123,22 +123,30 @@ body {
 .hp-nav__sheet {
   display: none;
   flex-direction: column;
-  padding: 0.5rem var(--hp-gutter) 1.25rem;
+  align-items: center;
+  padding: 0.75rem var(--hp-gutter) 1.5rem;
   border-top: 1px solid var(--hp-line);
+  text-align: center;
 }
 
 .hp-nav__sheet a {
-  padding: 0.9rem 0;
+  width: 100%;
+  padding: 1rem 0;
   border-bottom: 1px solid var(--hp-line);
   color: var(--hp-ink);
-  font-size: 1.05rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
   text-decoration: none;
 }
 
-.hp-nav__sheet a:last-child {
-  border-bottom: 0;
-  color: var(--hp-accent);
+.hp-nav__sheet .hp-nav__sheet-apply {
+  justify-content: center;
+  margin-top: 1.25rem;
+  padding: 1.1rem 1.5rem;
+  border: 0;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 1.15rem;
 }
 
 @media (max-width: 820px) {
