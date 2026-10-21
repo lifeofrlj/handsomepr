@@ -102,3 +102,43 @@ export const testimonials = [
   { name: "Ken", headline: "The dedication is genuine", quote: "What stood out versus everyone else? Everything, literally. The dedication is genuine." },
   { name: "Kaeleb", headline: "Finally a coach I could trust", quote: "You were open and honest about everything. I finally felt like I could trust a coach." },
 ];
+
+/** Ryan's own timeline, oldest first. */
+export const timeline = [
+  {
+    src: "/assets/timeline/01-natural.webp",
+    stage: "3.5 years natural",
+    stat: "110 lbs to 191 lbs, then 191 to 160",
+    text: "Went from 110 to 191 lbs on my own. Then I hired a coach for the first time, dropped 35 lbs of fat in 5 months and learned what structure actually does.",
+  },
+  {
+    src: "/assets/timeline/02-trt.webp",
+    stage: "First natural show, then testosterone",
+    stat: "160 lbs to 195 lbs in 6 months",
+    text: "Right after my first natural competition I started a conservative testosterone protocol. Six months later I was 35 lbs heavier and still lean.",
+  },
+  {
+    src: "/assets/timeline/03-first-blast.webp",
+    stage: "First blast",
+    stat: "195 lbs to 215 to 220 lbs",
+    text: "Six months on the base protocol, then six months into my first blast. Everything was planned, tracked and checked against bloodwork.",
+  },
+  {
+    src: "/assets/timeline/04-cruise-blast.webp",
+    stage: "Cruise, then blast again",
+    stat: "215 lbs to 195 lbs, harder and leaner",
+    text: "After a cruise I came back in at 215 and brought it down to a much denser 195 lbs 4 to 5 months into the next blast.",
+  },
+  {
+    src: "/assets/timeline/05-year.webp",
+    stage: "A year of bodybuilding",
+    stat: "190 lbs to 230 lbs",
+    text: "A full year focused on building. Nothing fancy, just consistent training, food and recovery, and the scale moved 40 lbs.",
+  },
+  {
+    src: "/assets/timeline/06-prep.webp",
+    stage: "Competition prep",
+    stat: "220 lbs to 192 lbs on show day",
+    text: "Nine weeks into prep on the left at 220 to 225 lbs. On the right, show day morning at 192 lbs. This is the process I now run with clients.",
+  },
+];

@@ -1,6 +1,6 @@
 import { CheckCircle } from "@phosphor-icons/react/dist/ssr";
 
-import { results, site, testimonials, videoTestimonials } from "@/lib/site";
+import { results, site, testimonials, timeline, videoTestimonials } from "@/lib/site";
 
 import { CnnVideo } from "./cnn";
 import { ApplyCta, TextMe } from "./ctas";
@@ -311,6 +311,25 @@ export function About() {
             <img alt="Ryan Johnson before and after" loading="lazy" src="/assets/results/ryan.webp" />
           </div>
         </div>
+      </div>
+      <div className="hp-wrap hp-timeline-wrap">
+        <p className="hp-kicker">My timeline</p>
+        <h3 className="hp-h2 hp-h2--sm">From 110 lbs natural to the stage.</h3>
+        <ol className="hp-timeline">
+          {timeline.map((step, index) => (
+            <li key={step.src}>
+              <div className="hp-timeline__img">
+                <img alt={step.stage} loading="lazy" src={step.src} />
+              </div>
+              <div className="hp-timeline__body">
+                <i aria-hidden>{String(index + 1).padStart(2, "0")}</i>
+                <h4>{step.stage}</h4>
+                <b>{step.stat}</b>
+                <p>{step.text}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
     </section>
   );
