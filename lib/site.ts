@@ -38,6 +38,14 @@ export const results = [
   { src: "/assets/results/young2.webp", name: "Client", note: "Fat loss, recomp" },
   { src: "/assets/results/tony.webp", name: "Tony", note: "Almost there, Coach" },
   { src: "/assets/results/stage.webp", name: "Stage day", note: "Medal on stage" },
+  { src: "/assets/results/lean1.webp", name: "Client", note: "Leaned out, face and waist" },
+  { src: "/assets/results/flex2.webp", name: "Client", note: "Fuller, harder look" },
+  { src: "/assets/results/outdoor.webp", name: "Client", note: "Shredded and conditioned" },
+  { src: "/assets/results/ck.webp", name: "Client", note: "Muscle gain, filled out" },
+  { src: "/assets/results/summer.webp", name: "Summer Shredding", note: "Medal with Coach Ryan" },
+  { src: "/assets/results/fourup.webp", name: "Client", note: "Skinny to built" },
+  { src: "/assets/results/blond.webp", name: "Client", note: "Lean muscle gain" },
+  { src: "/assets/results/senior.webp", name: "Client", note: "Leaner and stronger at 60+" },
 ];
 
 /** Video testimonials (YouTube Shorts IDs). */
