@@ -8,10 +8,11 @@ import { site } from "@/lib/site";
 import { TypeformButton } from "./typeform-button";
 
 const navLinks = [
-  ["/#method", "Method"],
+  ["/#brotherhood", "Brotherhood"],
   ["/#results", "Results"],
+  ["/#method", "Process"],
   ["/#about", "About"],
-  ["/playbook", "Playbook"],
+  ["/#faq", "FAQ"],
 ] as const;
 
 export function Wordmark() {
