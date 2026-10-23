@@ -318,6 +318,140 @@ body {
   height: 30%;
 }
 
+/* Merritt page */
+.hp-merritt-hero {
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+  background: radial-gradient(60rem 30rem at 50% 0%, rgba(58, 99, 232, 0.25), transparent 65%);
+}
+
+.hp-merritt-hero h1 {
+  max-width: 18ch;
+}
+
+.hp-merritt-photo {
+  position: relative;
+  width: min(100%, 44rem);
+  margin: 2.5rem auto 0;
+  overflow: hidden;
+  border: 1px solid var(--hp-line);
+  border-radius: var(--hp-radius);
+  box-shadow: 0 40px 90px -40px rgba(58, 99, 232, 0.7);
+}
+
+.hp-merritt-photo img {
+  display: block;
+  width: 100%;
+}
+
+.hp-merritt-tag {
+  position: absolute;
+  top: 0.9rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-family: var(--hp-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.hp-merritt-tag--before {
+  left: 0.9rem;
+  background: rgba(11, 13, 18, 0.8);
+  color: var(--hp-ink);
+}
+
+.hp-merritt-tag--after {
+  left: calc(50% + 0.9rem);
+  background: var(--hp-accent);
+  color: #ffffff;
+}
+
+.hp-stats--merritt {
+  margin-top: 1.5rem;
+}
+
+.hp-stats--merritt span {
+  text-transform: none;
+  letter-spacing: 0;
+  font-family: var(--hp-sans);
+  font-size: 0.85rem;
+}
+
+.hp-prose--left {
+  margin-left: 0;
+}
+
+.hp-quotebox {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-left: 4px solid var(--hp-accent);
+  border-radius: 0 var(--hp-radius) var(--hp-radius) 0;
+  background: var(--hp-raised);
+}
+
+.hp-quotebox p {
+  margin: 0;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+}
+
+.hp-quotebox cite {
+  display: block;
+  margin-top: 1rem;
+  color: var(--hp-muted);
+  font-style: normal;
+  font-family: var(--hp-mono);
+  font-size: 0.8rem;
+}
+
+.hp-chapters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 2rem;
+  width: min(100%, 60rem);
+  margin: 2rem auto 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.hp-chapters li {
+  display: grid;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
+  gap: 0.5rem;
+  padding: 0.85rem 0;
+  border-top: 1px solid var(--hp-line);
+  line-height: 1.45;
+}
+
+.hp-chapters i {
+  color: var(--hp-accent);
+  font-family: var(--hp-mono);
+  font-style: normal;
+  font-size: 0.8rem;
+  padding-top: 0.15rem;
+}
+
+.hp-features.hp-features--pillars {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 56rem);
+  margin-inline: auto;
+}
+
+.hp-fine--center {
+  margin: 1.25rem auto 0;
+  max-width: 60ch;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .hp-chapters,
+  .hp-features--pillars {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Playbook page */
 .hp-pagehero--photo {
   position: relative;

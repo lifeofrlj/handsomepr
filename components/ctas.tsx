@@ -48,6 +48,15 @@ export function PlaybookCardCta({ label = "Click here" }: { label?: string }) {
   );
 }
 
+export function MerrittCta({ label = "Send me the full story" }: { label?: string }) {
+  return (
+    <TypeformButton className="hp-cta-apply" formId={site.merrittFormId} href={site.merrittHref}>
+      {label}
+      <ArrowRight aria-hidden size={18} weight="bold" />
+    </TypeformButton>
+  );
+}
+
 export function TextMe() {
   return (
     <a className="hp-textme" href={site.smsHref}>
