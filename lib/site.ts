@@ -16,8 +16,8 @@ export const site = {
   playbookEmbed: "https://handsomepr.typeform.com/to/ZKVN0mZe?typeform-embed=embed-widget&typeform-medium=embed-sdk",
   cheatSheetFormId: "fvHMNZrQ",
   /** Merritt full story guide (Typeform). Swap for the dedicated form once it exists. */
-  merrittFormId: "ZKVN0mZe",
-  merrittHref: "https://handsomepr.typeform.com/to/ZKVN0mZe",
+  merrittFormId: "jSOktr2J",
+  merrittHref: "https://handsomepr.typeform.com/to/jSOktr2J",
   cheatSheetHref: "https://handsomepr.typeform.com/to/fvHMNZrQ",
   cnnVideoId: "fQHzYlLBPcM",
   vslVideoId: "69pV9TO9LvE",
