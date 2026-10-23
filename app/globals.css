@@ -324,8 +324,18 @@ body {
   background: radial-gradient(60rem 30rem at 50% 0%, rgba(58, 99, 232, 0.25), transparent 65%);
 }
 
+.hp-merritt-hero .hp-kicker {
+  margin-bottom: 1.5rem;
+}
+
 .hp-merritt-hero h1 {
   max-width: 18ch;
+  line-height: 1.08;
+}
+
+.hp-merritt-hero h1 mark.hl {
+  padding: 0 0.25em;
+  line-height: 1;
 }
 
 .hp-merritt-photo {
@@ -370,11 +380,18 @@ body {
   margin-top: 1.5rem;
 }
 
-.hp-stats--merritt span {
+.hp-stats.hp-stats--merritt span {
   text-transform: none;
   letter-spacing: 0;
   font-family: var(--hp-sans);
   font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.hp-stats.hp-stats--merritt b {
+  font-family: var(--hp-sans);
+  font-weight: 800;
+  letter-spacing: -0.03em;
 }
 
 .hp-prose--left {
