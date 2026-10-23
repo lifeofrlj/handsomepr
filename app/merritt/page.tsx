@@ -105,6 +105,14 @@ export default function MerrittPage() {
               Real numbers pulled from his actual meal plans. His real split. How his cardio climbed. What his bloodwork
               looked like. And the part nobody talks about: what was going on in his head.
             </p>
+            <img
+              alt="Merritt Skinner: The Full Story ebook"
+              className="hp-card__mock hp-merritt-mock"
+              height={860}
+              loading="lazy"
+              src="/assets/merritt-mockup.webp"
+              width={1400}
+            />
             <ol className="hp-chapters">
               {chapters.map((c, i) => (
                 <li key={c}>

@@ -2159,3 +2159,8 @@ mark.hl {
     transform: none;
   }
 }
+
+.hp-card__mock.hp-merritt-mock {
+  max-width: 46rem;
+  margin: 2rem auto 2.5rem;
+}
