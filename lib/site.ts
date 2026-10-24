@@ -4,8 +4,8 @@ export const site = {
   coach: "Ryan Johnson",
   url: "https://handsomepr.com",
   instagram: "https://instagram.com/lifeofrlj",
-  phoneDisplay: "(512) 734-8228",
-  smsHref: "sms:+15127348228?body=Hey%20Ryan%2C%20I%20have%20a%20question%20about%20coaching",
+  phoneDisplay: "(737) 201-4218",
+  smsHref: "sms:+17372014218?body=Hey%20Ryan%2C%20I%20have%20a%20question%20about%20coaching",
   /** Coaching application (Typeform). */
   applyFormId: "XQaM96iw",
   applyHref: "https://form.typeform.com/to/XQaM96iw",
