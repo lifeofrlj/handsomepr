@@ -34,7 +34,10 @@ export function VslHero() {
     <section className="hp-hero hp-hero--vsl" id="top">
       <div className="hp-hero__inner">
         <p className="hp-hero__eyebrow">Watch this before you apply</p>
-        <h1>We Help Men Look, Feel & Become Badass</h1>
+        <h1>
+          Men <span className="hp-nowrap">21‑50yrs</span> old gain <mark className="hl"><span className="hp-nowrap">15‑25lbs</span> of lean muscle</mark> & achieve{" "}
+          <mark className="hl">12% body fat</mark> <em className="hp-accent">guaranteed</em> within 6 months
+        </h1>
         <div className="hp-vsl">
           <iframe
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -43,15 +46,11 @@ export function VslHero() {
             title="Handsome PR coaching"
           />
         </div>
-        <p className="hp-hero__sub">
-          Online coaching & community for men who want to transform their body, mind and life through proper
-          training, nutrition, mindset, lifestyle and hormone optimization. If you're ready to Handsome PR, apply below.
-        </p>
-        <div className="hp-actions">
-          <ApplyCta />
-          <a className="hp-cta-playbook" href="#results">
-            See client results
-          </a>
+        <div className="hp-vslform" id="apply-form">
+          <h2>Check eligibility in 60 seconds</h2>
+          <div className="hp-embed hp-embed--vsl">
+            <iframe allow="camera; microphone; autoplay; encrypted-media" src={site.applyEmbed} title="Check your eligibility" />
+          </div>
         </div>
       </div>
     </section>

@@ -2164,3 +2164,33 @@ mark.hl {
   max-width: 46rem;
   margin: 2rem auto 2.5rem;
 }
+
+/* VSL page: long promise headline + inline application */
+.hp-hero--vsl h1 {
+  font-size: clamp(1.75rem, 4.4vw, 3.4rem);
+  line-height: 1.08;
+  max-width: 56rem;
+}
+
+.hp-hero--vsl h1 mark.hl {
+  padding: 0 0.12em;
+}
+
+.hp-vslform {
+  width: min(100%, 52rem);
+  margin: 2.5rem auto 0;
+}
+
+.hp-vslform h2 {
+  margin: 0;
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.hp-embed.hp-embed--vsl {
+  margin-top: 1rem;
+  height: clamp(30rem, 70vh, 38rem);
+}
+.hp-nowrap { white-space: nowrap; }

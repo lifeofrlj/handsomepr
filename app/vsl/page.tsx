@@ -3,13 +3,10 @@ import type { Metadata } from "next";
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
 import {
-  About,
   Brotherhood,
   Closing,
   CnnFeature,
-  Faq,
   Method,
-  NextLevel,
   Results,
   Testimonials,
   VslHero,
@@ -28,13 +25,10 @@ export default function VslPage() {
       <main>
         <VslHero />
         <Results />
-        <NextLevel />
         <Method />
         <Brotherhood />
         <Testimonials />
         <CnnFeature />
-        <About />
-        <Faq />
         <Closing />
       </main>
       <Footer />
