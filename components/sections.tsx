@@ -4,6 +4,7 @@ import { results, site, testimonials, timeline, videoTestimonials } from "@/lib/
 
 import { CnnVideo } from "./cnn";
 import { ApplyCta, TextMe } from "./ctas";
+import { VslPlayer } from "./vsl-player";
 
 export function Hero() {
   return (
@@ -33,19 +34,12 @@ export function VslHero() {
   return (
     <section className="hp-hero hp-hero--vsl" id="top">
       <div className="hp-hero__inner">
-        <p className="hp-hero__eyebrow">Watch this before you apply</p>
         <h1>
           Men <span className="hp-nowrap">21‑50yrs</span> old gain <mark className="hl"><span className="hp-nowrap">15‑25lbs</span> of lean muscle</mark> & achieve{" "}
           <mark className="hl">12% body fat</mark> <em className="hp-accent">guaranteed</em> within 6 months
         </h1>
-        <div className="hp-vsl">
-          <iframe
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            src={`https://www.youtube-nocookie.com/embed/${site.vslVideoId}?rel=0&modestbranding=1`}
-            title="Handsome PR coaching"
-          />
-        </div>
+        <p className="hp-hero__eyebrow hp-hero__eyebrow--below">Watch this before you apply</p>
+        <VslPlayer title="Handsome PR coaching" videoId={site.vslVideoId} />
         <div className="hp-vslform" id="apply-form">
           <h2>Check eligibility in 60 seconds</h2>
           <div className="hp-embed hp-embed--vsl">
