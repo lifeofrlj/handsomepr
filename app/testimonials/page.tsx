@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { Footer } from "@/components/footer";
 import { Wordmark } from "@/components/nav";
+import { VimeoShort } from "@/components/vimeo-short";
 import { results, testimonialPageVideos } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -35,15 +36,7 @@ export default function TestimonialsPage() {
             <div className="hp-videos hp-videos--testimonials">
               {testimonialPageVideos.map((v) => (
                 <figure key={v.vimeo}>
-                  <div className="hp-video hp-video--short">
-                    <iframe
-                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                      allowFullScreen
-                      loading="lazy"
-                      src={`https://player.vimeo.com/video/${v.vimeo}&title=0&byline=0&portrait=0&dnt=1`}
-                      title={`${v.name} testimonial`}
-                    />
-                  </div>
+                  <VimeoShort title={`${v.name} testimonial`} video={v.vimeo} />
                   <figcaption>
                     <h2>{v.headline}</h2>
                     <b>{v.name}</b>

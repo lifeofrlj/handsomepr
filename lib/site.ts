@@ -177,9 +177,9 @@ export const testimonialPageVideos = [
   {
     vimeo: "1241342180?h=ade0fc8117",
     name: "Justin Halstead",
-    headline: "281 lbs to 208 lbs while putting on muscle",
+    headline: "291 lbs to 200 lbs. Down 91 lbs.",
     description:
-      "One of the OGs of Team Handsome PR. He joined in 2023 at 281 lbs, stuck in a bad place, and by December 2024 he was down to 208 lbs while putting on muscle.",
+      "One of the OGs of Team Handsome PR. He joined in 2023 at 291 lbs, stuck in a bad place, and got all the way down to 200 lbs at his leanest while putting on muscle.",
     quote: "Best decision of my life, best investment of my life.",
     bullets: [
       "Gained new friends, a new mindset and new confidence",

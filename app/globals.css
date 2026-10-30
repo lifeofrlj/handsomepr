@@ -2305,3 +2305,38 @@ mark.hl {
   font-style: italic;
   font-weight: 600;
 }
+
+/* Vimeo short with a single custom play button */
+.hp-vshort__btn {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.hp-vshort__icon {
+  display: grid;
+  place-items: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding-left: 0.25rem;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--hp-accent);
+  box-shadow: 0 12px 30px -8px rgba(58, 99, 232, 0.9);
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.hp-vshort__btn:hover .hp-vshort__icon {
+  transform: scale(1.08);
+}
+
+.hp-vshort__btn[data-playing="true"] .hp-vshort__icon {
+  opacity: 0;
+}
