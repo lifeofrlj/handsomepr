@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { Footer } from "@/components/footer";
 import { Wordmark } from "@/components/nav";
-import { results, videoTestimonials } from "@/lib/site";
+import { results, testimonialPageVideos } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Client Testimonials",
@@ -33,14 +33,14 @@ export default function TestimonialsPage() {
         <section className="hp-section hp-section--tight">
           <div className="hp-wrap">
             <div className="hp-videos hp-videos--testimonials">
-              {videoTestimonials.map((v) => (
-                <figure key={v.id}>
+              {testimonialPageVideos.map((v) => (
+                <figure key={v.vimeo}>
                   <div className="hp-video hp-video--short">
                     <iframe
-                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                       allowFullScreen
                       loading="lazy"
-                      src={`https://www.youtube-nocookie.com/embed/${v.id}?rel=0&modestbranding=1`}
+                      src={`https://player.vimeo.com/video/${v.vimeo}&title=0&byline=0&portrait=0&dnt=1`}
                       title={`${v.name} testimonial`}
                     />
                   </div>
@@ -48,11 +48,14 @@ export default function TestimonialsPage() {
                     <h2>{v.headline}</h2>
                     <b>{v.name}</b>
                     <span>{v.description}</span>
+                    {v.quote && <q className="hp-vquote">{v.quote}</q>}
+                    {v.bullets.length > 0 && (
                     <ul>
                       {v.bullets.map((line) => (
                         <li key={line}>{line}</li>
                       ))}
                     </ul>
+                    )}
                   </figcaption>
                 </figure>
               ))}

@@ -149,3 +149,76 @@ export const timeline = [
     text: "Nine weeks into prep on the left at 220 to 225 lbs. On the right, show day morning at 192 lbs. This is the process I now run with clients.",
   },
 ];
+
+/** Testimonial videos on the /testimonials page (Vimeo, vertical). Copy written from the video transcripts. */
+export const testimonialPageVideos = [
+  {
+    vimeo: "1241333949?h=7293df5612",
+    name: "Merritt",
+    headline: "From heartbroken to back to back champion",
+    description:
+      "Stuck at 190 lbs and soft after the worst year of his life. He dieted to 163 lbs and won his first show, then built up to 220 lbs in 24 weeks and won again.",
+    quote: "",
+    bullets: ["2 shows, 2 first place finishes", "+57 lbs in a 24 week build", "Turned pain into direction"],
+  },
+  {
+    vimeo: "1241337867?h=620d361c9b",
+    name: "Justin Blodgett",
+    headline: "Plateaued at 225 lbs. Shredded and on stage in 6 months.",
+    description:
+      "He came in wanting to keep bulking at 225 lbs but had stopped making progress. Six months later he was around 185 lbs, down from well over 25% body fat to roughly 10%, and had stepped on stage.",
+    quote: "100% worth the investment.",
+    bullets: [
+      "Diet, training and mindset rebuilt together",
+      "Stepped on stage, which was never part of his original plan",
+      "Transformed his whole identity, not just his physique",
+    ],
+  },
+  {
+    vimeo: "1241342180?h=ade0fc8117",
+    name: "Justin Halstead",
+    headline: "281 lbs to 208 lbs while putting on muscle",
+    description:
+      "One of the OGs of Team Handsome PR. He joined in 2023 at 281 lbs, stuck in a bad place, and by December 2024 he was down to 208 lbs while putting on muscle.",
+    quote: "Best decision of my life, best investment of my life.",
+    bullets: [
+      "Gained new friends, a new mindset and new confidence",
+      "Reached 900 ng/dL testosterone naturally",
+      "Went from the bottom of the sales reps to the top at work",
+    ],
+  },
+  {
+    vimeo: "1241340452?h=d0064f3ae1",
+    name: "Tony",
+    headline: "170 lbs to 200 lbs lean in 6 months",
+    description:
+      "He came in during a tough stretch, mentally and physically. Ryan helped him connect the dots between the two and built a plan tailored to his goals.",
+    quote: "The absolute best decision I've ever made in my life.",
+    bullets: [
+      "Learned how to run his first cycle the right way",
+      "Got his lifestyle back together with the coaching and community",
+      "Started his own business",
+    ],
+  },
+  {
+    vimeo: "1241339364?h=ae33b963f3",
+    name: "Justin Loi",
+    headline: "From average gym goer to peeled on stage",
+    description:
+      "He had the passion but didn't know how to take it to the next level. Ryan believed in him before he believed in himself, and he got absolutely peeled for his first bodybuilding show.",
+    quote: "One decision can absolutely change your life.",
+    bullets: [
+      "Not just a workout and meal plan: support any time of day",
+      "Learned the why behind everything he was doing",
+      "Made the mindset shifts that got him there",
+    ],
+  },
+  {
+    vimeo: "1241356704?h=11e96c98db",
+    name: "Brenner",
+    headline: "The real secrets, not a show",
+    description: "It feels personal, like you're sharing the real secrets, not putting on a show for social media.",
+    quote: "",
+    bullets: [],
+  },
+];
