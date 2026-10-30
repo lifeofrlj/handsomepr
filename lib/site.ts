@@ -55,6 +55,7 @@ export const results = [
 export const videoTestimonials = [
   {
     id: "7HzdL88zkM0",
+    headline: "From average to on stage in 6 months",
     name: "Justin",
     description:
       "Consistent for years but woke up in an average looking physique. In 6 months he got in the best shape of his life and stepped on stage for the first time.",
@@ -66,6 +67,7 @@ export const videoTestimonials = [
   },
   {
     id: "w9uHWPlU_Yo",
+    headline: "27 years overweight. Down 90+ lbs.",
     name: "Justin Halstead",
     description:
       "Overweight for 27 years and going down a bad path. Within 6 months we dropped all the bad habits and lost 50 lbs. A year later he was down 90+ lbs and stepped on stage in the transformation division.",
@@ -77,6 +79,7 @@ export const videoTestimonials = [
   },
   {
     id: "O1jMYcKpK3k",
+    headline: "Plateaued for years, then 25 lbs in 6 months",
     name: "Tony",
     description: "Gained 25 lbs in 6 months after plateauing for years.",
     bullets: [
@@ -87,6 +90,7 @@ export const videoTestimonials = [
   },
   {
     id: "04y2YJq5MME",
+    headline: "From unhealthy to shredded and on stage",
     name: "Justin Loi",
     description: "Fat and unhealthy to shredded and optimized. Also stepped on stage for his first time.",
     bullets: [

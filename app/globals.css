@@ -1533,7 +1533,7 @@ mark.hl {
   text-align: left;
 }
 
-.hp-video--short {
+.hp-video.hp-video--short {
   aspect-ratio: 9 / 16;
 }
 
@@ -2244,4 +2244,36 @@ mark.hl {
 }
 .hp-hero--vsl .hp-vsl {
   margin-top: 1rem;
+}
+
+/* Testimonials page */
+.hp-nav--plain .hp-nav__bar {
+  display: flex;
+  justify-content: center;
+}
+
+.hp-pagehero__title {
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 4.75rem);
+  font-weight: 800;
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.hp-section--tight {
+  padding-top: 0;
+}
+
+.hp-videos--testimonials {
+  margin-top: 0;
+}
+
+.hp-videos figcaption h2 {
+  margin: 0.15rem 0 0.35rem;
+  color: var(--hp-ink);
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
