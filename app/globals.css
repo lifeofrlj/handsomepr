@@ -2261,8 +2261,9 @@ mark.hl {
   text-transform: uppercase;
 }
 
-.hp-section--tight {
+.hp-section.hp-section--tight {
   padding-top: 0;
+  border-top: 0;
 }
 
 .hp-videos--testimonials {
