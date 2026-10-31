@@ -5,6 +5,7 @@ import { ApplyCta, CheatSheetCta, PlaybookCardCta, PlaybookFormCta } from "@/com
 import { Footer } from "@/components/footer";
 import { Nav } from "@/components/nav";
 import { site } from "@/lib/site";
+import { VslPlayer } from "@/components/vsl-player";
 
 export const metadata: Metadata = {
   title: site.magnetName,
@@ -61,15 +62,7 @@ export default function PlaybookPage() {
 
         <section className="hp-section" id="watch">
           <div className="hp-wrap">
-            <div className="hp-vsl hp-vsl--flush">
-              <iframe
-                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                loading="lazy"
-                src={`https://www.youtube-nocookie.com/embed/${site.vslVideoId}?rel=0&modestbranding=1`}
-                title="Handsome PR coaching"
-              />
-            </div>
+            <VslPlayer className="hp-vsl--flush" title="Handsome PR coaching" videoId={site.vslVideoId} />
             <div className="hp-actions">
               <ApplyCta label="Apply here" />
             </div>
