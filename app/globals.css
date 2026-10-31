@@ -2380,3 +2380,15 @@ mark.hl {
 .hp-vsl__overlay--paused:hover .hp-vsl__play {
   transform: scale(1.08);
 }
+
+/* Vertical (9:16) VSL */
+.hp-vsl.hp-vsl--vertical {
+  aspect-ratio: 9 / 16;
+  width: min(100%, 23rem);
+}
+
+.hp-vsl--vertical .hp-vsl__box {
+  font-size: clamp(1.5rem, 6vw, 2rem);
+  padding: 0 1rem;
+  text-align: center;
+}

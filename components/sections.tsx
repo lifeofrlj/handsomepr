@@ -39,7 +39,7 @@ export function VslHero() {
           <mark className="hl">12% body fat</mark> <em className="hp-accent">guaranteed</em> within 6 months
         </h1>
         <p className="hp-hero__eyebrow hp-hero__eyebrow--below">Watch this before you apply</p>
-        <VslPlayer title="Handsome PR coaching" videoId={site.vslVideoId} />
+        <VslPlayer title="Handsome PR coaching" vertical={site.vslVertical} videoId={site.vslVideoId} />
         <div className="hp-vslform" id="apply-form">
           <h2>Check eligibility in 60 seconds</h2>
           <div className="hp-embed hp-embed--vsl">

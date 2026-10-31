@@ -12,7 +12,17 @@ type Mode = "intro" | "playing" | "paused";
  * clicking restarts it with sound. While playing, a click pauses; when paused or
  * finished, the blue overlay returns with a single play button.
  */
-export function VslPlayer({ videoId, title, className = "" }: { videoId: string; title: string; className?: string }) {
+export function VslPlayer({
+  videoId,
+  title,
+  className = "",
+  vertical = false,
+}: {
+  videoId: string;
+  title: string;
+  className?: string;
+  vertical?: boolean;
+}) {
   const frame = useRef<HTMLIFrameElement>(null);
   const [mode, setMode] = useState<Mode>("intro");
   const modeRef = useRef<Mode>("intro");
@@ -71,7 +81,7 @@ export function VslPlayer({ videoId, title, className = "" }: { videoId: string;
   };
 
   return (
-    <div className={`hp-vsl hp-vsl--chromeless ${className}`.trim()}>
+    <div className={`hp-vsl hp-vsl--chromeless ${vertical ? "hp-vsl--vertical" : ""} ${className}`.trim()}>
       <iframe
         allow="autoplay; encrypted-media; picture-in-picture"
         ref={frame}

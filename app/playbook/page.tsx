@@ -62,7 +62,7 @@ export default function PlaybookPage() {
 
         <section className="hp-section" id="watch">
           <div className="hp-wrap">
-            <VslPlayer className="hp-vsl--flush" title="Handsome PR coaching" videoId={site.vslVideoId} />
+            <VslPlayer className="hp-vsl--flush" title="Handsome PR coaching" vertical={site.vslVertical} videoId={site.vslVideoId} />
             <div className="hp-actions">
               <ApplyCta label="Apply here" />
             </div>
