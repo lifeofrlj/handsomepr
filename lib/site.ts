@@ -20,7 +20,7 @@ export const site = {
   merrittHref: "https://handsomepr.typeform.com/to/jSOktr2J",
   cheatSheetHref: "https://handsomepr.typeform.com/to/fvHMNZrQ",
   cnnVideoId: "fQHzYlLBPcM",
-  vslVideoId: "pF2UvajXgUA",
+  vslVideoId: "2QGag7a01YU",
   vslVertical: false,
   magnetName: "The Handsome Enhancement Playbook",
   bookedVideo1: "aBp5xM_JX3s",
