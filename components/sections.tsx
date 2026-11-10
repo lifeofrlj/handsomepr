@@ -3,7 +3,7 @@ import { CheckCircle } from "@phosphor-icons/react/dist/ssr";
 import { results, site, testimonials, timeline, videoTestimonials } from "@/lib/site";
 
 import { CnnVideo } from "./cnn";
-import { ApplyCta, TextMe } from "./ctas";
+import { ApplyCta, TextMe, VslApplyCta } from "./ctas";
 import { VslPlayer } from "./vsl-player";
 
 export function Hero() {
@@ -20,7 +20,7 @@ export function Hero() {
           click the button below.
         </p>
         <div className="hp-actions">
-          <ApplyCta />
+          <VslApplyCta />
           <a className="hp-cta-playbook" href="#results">
             See client results
           </a>

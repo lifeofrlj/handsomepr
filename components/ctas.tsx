@@ -13,6 +13,16 @@ export function ApplyCta({ label = "Apply Now" }: { label?: string }) {
   );
 }
 
+/** Apply button that sends visitors to the VSL page first. */
+export function VslApplyCta({ label = "Apply Now" }: { label?: string }) {
+  return (
+    <a className="hp-cta-apply" href="/vsl">
+      {label}
+      <ArrowRight aria-hidden size={18} weight="bold" />
+    </a>
+  );
+}
+
 export function PlaybookCta({ label = "Get the free playbook" }: { label?: string }) {
   return (
     <a className="hp-cta-playbook" href="/playbook">
